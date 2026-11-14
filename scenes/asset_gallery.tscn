@@ -1,0 +1,972 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/blue_cable_segment.glb" id="1_2lt2r"]
+[ext_resource type="PackedScene" path="res://assets/cabinet.glb" id="2_gi6ex"]
+[ext_resource type="PackedScene" path="res://assets/green_pipe_segment.glb" id="3_o2b37"]
+[ext_resource type="PackedScene" path="res://assets/light_fixture.glb" id="4_oudnv"]
+[ext_resource type="PackedScene" path="res://assets/oxygen_control_panel.glb" id="5_yospp"]
+[ext_resource type="PackedScene" path="res://assets/oxygen_tank_station.glb" id="6_fijie"]
+[ext_resource type="PackedScene" path="res://assets/oxygen_tanks_pair.glb" id="7_wtdmf"]
+[ext_resource type="PackedScene" path="res://assets/power_screen.glb" id="8_uppeu"]
+[ext_resource type="PackedScene" path="res://assets/power_screen_slim_tv.glb" id="9_ngq0r"]
+[ext_resource type="PackedScene" path="res://assets/small_bed.glb" id="10_fkrtn"]
+[ext_resource type="PackedScene" path="res://assets/storage_container.glb" id="11_xumun"]
+
+[sub_resource type="Environment" id="Environment_apda1"]
+background_mode = 1
+background_color = Color(0.16862746, 0.16862746, 0.2, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nhe2t"]
+top_radius = 0.15
+bottom_radius = 0.15
+height = 1.8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_thumo"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_3uute"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qrpaq"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_iubln"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7o7yl"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_1e8ak"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_prhhk"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_utqo5"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rx6ml"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0yk2f"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oufdg"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_anbdr"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rpntm"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_gxt7f"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c7n2k"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nswcd"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y8xe7"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0qnhv"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hmpi5"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_mbfps"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n4hga"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ufxp3"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kc3f2"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_io357"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_06c0x"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_guxry"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qm8bo"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_3g4u1"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xe513"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ot6py"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u433a"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_lcjbn"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a8b4k"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_73dgc"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ne76"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_uib5i"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ywx0i"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_yqfvy"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2kju"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_naaem"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mmpao"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_1bdfs"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_30x6v"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ha01v"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_art02"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vi2lv"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_17vwh"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_sv31c"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k6grk"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_tb0kd"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yyern"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_yj18m"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uut72"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8ggbr"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aacwm"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_gk3c4"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dk1kv"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xtpcy"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w8ox5"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_jmkl6"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3o21c"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ksnup"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pb8uy"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0pldm"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_47v8v"]
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_jmeau"]
+top_radius = 0.02
+bottom_radius = 0.02
+height = 1.0
+
+[node name="AssetGallery" type="Node3D" unique_id=1616844126]
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=581779606]
+transform = Transform3D(0.8660254, -0.38302222, 0.32139382, 0, 0.64278764, 0.76604444, -0.5, -0.66341394, 0.5566704, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2059053647]
+environment = SubResource("Environment_apda1")
+
+[node name="Reference_1_8m" type="MeshInstance3D" parent="." unique_id=672172923]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.9, 0)
+mesh = SubResource("CylinderMesh_nhe2t")
+
+[node name="blue_cable_segment" type="Node3D" parent="." unique_id=1345446091]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="blue_cable_segment" type="Node3D" parent="blue_cable_segment" unique_id=4503532 instance=ExtResource("1_2lt2r")]
+
+[node name="Axis_X" type="MeshInstance3D" parent="blue_cable_segment" unique_id=1497616403]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_thumo")
+mesh = SubResource("CylinderMesh_3uute")
+
+[node name="AxisLabel_X" type="Label3D" parent="blue_cable_segment" unique_id=1031696235]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 0, 0, 1)
+text = "X"
+font_size = 64
+
+[node name="Axis_Y" type="MeshInstance3D" parent="blue_cable_segment" unique_id=1299891161]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_qrpaq")
+mesh = SubResource("CylinderMesh_iubln")
+
+[node name="AxisLabel_Y" type="Label3D" parent="blue_cable_segment" unique_id=1300157815]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 1, 0, 1)
+text = "Y"
+font_size = 64
+
+[node name="Axis_Z" type="MeshInstance3D" parent="blue_cable_segment" unique_id=1356273399]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.5)
+material_override = SubResource("StandardMaterial3D_7o7yl")
+mesh = SubResource("CylinderMesh_1e8ak")
+
+[node name="AxisLabel_Z" type="Label3D" parent="blue_cable_segment" unique_id=558107517]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 0, 1, 1)
+text = "Z"
+font_size = 64
+
+[node name="FileName" type="Label3D" parent="blue_cable_segment" unique_id=450448391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+text = "blue_cable_segment.glb"
+font_size = 48
+
+[node name="cabinet" type="Node3D" parent="." unique_id=748792687]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, 0)
+
+[node name="cabinet" type="Node3D" parent="cabinet" unique_id=711573147 instance=ExtResource("2_gi6ex")]
+
+[node name="Axis_X" type="MeshInstance3D" parent="cabinet" unique_id=884415023]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_prhhk")
+mesh = SubResource("CylinderMesh_utqo5")
+
+[node name="AxisLabel_X" type="Label3D" parent="cabinet" unique_id=1383329348]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 0, 0, 1)
+text = "X"
+font_size = 64
+
+[node name="Axis_Y" type="MeshInstance3D" parent="cabinet" unique_id=1081178336]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_rx6ml")
+mesh = SubResource("CylinderMesh_0yk2f")
+
+[node name="AxisLabel_Y" type="Label3D" parent="cabinet" unique_id=1116126921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 1, 0, 1)
+text = "Y"
+font_size = 64
+
+[node name="Axis_Z" type="MeshInstance3D" parent="cabinet" unique_id=1973256571]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.5)
+material_override = SubResource("StandardMaterial3D_oufdg")
+mesh = SubResource("CylinderMesh_anbdr")
+
+[node name="AxisLabel_Z" type="Label3D" parent="cabinet" unique_id=734393775]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 0, 1, 1)
+text = "Z"
+font_size = 64
+
+[node name="FileName" type="Label3D" parent="cabinet" unique_id=1158684827]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+text = "cabinet.glb"
+font_size = 48
+
+[node name="green_pipe_segment" type="Node3D" parent="." unique_id=622863042]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1, 0)
+
+[node name="green_pipe_segment" type="Node3D" parent="green_pipe_segment" unique_id=424686128 instance=ExtResource("3_o2b37")]
+
+[node name="Axis_X" type="MeshInstance3D" parent="green_pipe_segment" unique_id=637053226]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_rpntm")
+mesh = SubResource("CylinderMesh_gxt7f")
+
+[node name="AxisLabel_X" type="Label3D" parent="green_pipe_segment" unique_id=284253850]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 0, 0, 1)
+text = "X"
+font_size = 64
+
+[node name="Axis_Y" type="MeshInstance3D" parent="green_pipe_segment" unique_id=26203729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_c7n2k")
+mesh = SubResource("CylinderMesh_nswcd")
+
+[node name="AxisLabel_Y" type="Label3D" parent="green_pipe_segment" unique_id=697564340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 1, 0, 1)
+text = "Y"
+font_size = 64
+
+[node name="Axis_Z" type="MeshInstance3D" parent="green_pipe_segment" unique_id=2044101866]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.5)
+material_override = SubResource("StandardMaterial3D_y8xe7")
+mesh = SubResource("CylinderMesh_0qnhv")
+
+[node name="AxisLabel_Z" type="Label3D" parent="green_pipe_segment" unique_id=238791147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 0, 1, 1)
+text = "Z"
+font_size = 64
+
+[node name="FileName" type="Label3D" parent="green_pipe_segment" unique_id=157874003]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+text = "green_pipe_segment.glb"
+font_size = 48
+
+[node name="light_fixture" type="Node3D" parent="." unique_id=363396698]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 1, 0)
+
+[node name="light_fixture" type="Node3D" parent="light_fixture" unique_id=514356904 instance=ExtResource("4_oudnv")]
+
+[node name="Axis_X" type="MeshInstance3D" parent="light_fixture" unique_id=1296524555]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_hmpi5")
+mesh = SubResource("CylinderMesh_mbfps")
+
+[node name="AxisLabel_X" type="Label3D" parent="light_fixture" unique_id=1808831233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 0, 0, 1)
+text = "X"
+font_size = 64
+
+[node name="Axis_Y" type="MeshInstance3D" parent="light_fixture" unique_id=2053389371]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_n4hga")
+mesh = SubResource("CylinderMesh_ufxp3")
+
+[node name="AxisLabel_Y" type="Label3D" parent="light_fixture" unique_id=111242243]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 1, 0, 1)
+text = "Y"
+font_size = 64
+
+[node name="Axis_Z" type="MeshInstance3D" parent="light_fixture" unique_id=206322326]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.5)
+material_override = SubResource("StandardMaterial3D_kc3f2")
+mesh = SubResource("CylinderMesh_io357")
+
+[node name="AxisLabel_Z" type="Label3D" parent="light_fixture" unique_id=1758104721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 0, 1, 1)
+text = "Z"
+font_size = 64
+
+[node name="FileName" type="Label3D" parent="light_fixture" unique_id=72325661]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+text = "light_fixture.glb"
+font_size = 48
+
+[node name="oxygen_control_panel" type="Node3D" parent="." unique_id=499077326]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 1, 0)
+
+[node name="oxygen_control_panel" type="Node3D" parent="oxygen_control_panel" unique_id=264735567 instance=ExtResource("5_yospp")]
+
+[node name="Axis_X" type="MeshInstance3D" parent="oxygen_control_panel" unique_id=1941990656]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_06c0x")
+mesh = SubResource("CylinderMesh_guxry")
+
+[node name="AxisLabel_X" type="Label3D" parent="oxygen_control_panel" unique_id=346546181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 0, 0, 1)
+text = "X"
+font_size = 64
+
+[node name="Axis_Y" type="MeshInstance3D" parent="oxygen_control_panel" unique_id=2110502876]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_qm8bo")
+mesh = SubResource("CylinderMesh_3g4u1")
+
+[node name="AxisLabel_Y" type="Label3D" parent="oxygen_control_panel" unique_id=485540184]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 1, 0, 1)
+text = "Y"
+font_size = 64
+
+[node name="Axis_Z" type="MeshInstance3D" parent="oxygen_control_panel" unique_id=770370896]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.5)
+material_override = SubResource("StandardMaterial3D_xe513")
+mesh = SubResource("CylinderMesh_ot6py")
+
+[node name="AxisLabel_Z" type="Label3D" parent="oxygen_control_panel" unique_id=1649004059]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 0, 1, 1)
+text = "Z"
+font_size = 64
+
+[node name="FileName" type="Label3D" parent="oxygen_control_panel" unique_id=1166007137]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+text = "oxygen_control_panel.glb"
+font_size = 48
+
+[node name="oxygen_tank_station" type="Node3D" parent="." unique_id=690356653]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 1, 0)
+
+[node name="oxygen_tank_station" type="Node3D" parent="oxygen_tank_station" unique_id=126526610 instance=ExtResource("6_fijie")]
+
+[node name="Axis_X" type="MeshInstance3D" parent="oxygen_tank_station" unique_id=400299053]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_u433a")
+mesh = SubResource("CylinderMesh_lcjbn")
+
+[node name="AxisLabel_X" type="Label3D" parent="oxygen_tank_station" unique_id=1044325722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 0, 0, 1)
+text = "X"
+font_size = 64
+
+[node name="Axis_Y" type="MeshInstance3D" parent="oxygen_tank_station" unique_id=147038902]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_a8b4k")
+mesh = SubResource("CylinderMesh_73dgc")
+
+[node name="AxisLabel_Y" type="Label3D" parent="oxygen_tank_station" unique_id=223801860]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 1, 0, 1)
+text = "Y"
+font_size = 64
+
+[node name="Axis_Z" type="MeshInstance3D" parent="oxygen_tank_station" unique_id=887459548]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.5)
+material_override = SubResource("StandardMaterial3D_0ne76")
+mesh = SubResource("CylinderMesh_uib5i")
+
+[node name="AxisLabel_Z" type="Label3D" parent="oxygen_tank_station" unique_id=552517306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 0, 1, 1)
+text = "Z"
+font_size = 64
+
+[node name="FileName" type="Label3D" parent="oxygen_tank_station" unique_id=163868557]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+text = "oxygen_tank_station.glb"
+font_size = 48
+
+[node name="oxygen_tanks_pair" type="Node3D" parent="." unique_id=99990716]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 1, 0)
+
+[node name="oxygen_tanks_pair" type="Node3D" parent="oxygen_tanks_pair" unique_id=662415477 instance=ExtResource("7_wtdmf")]
+
+[node name="Axis_X" type="MeshInstance3D" parent="oxygen_tanks_pair" unique_id=721995921]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_ywx0i")
+mesh = SubResource("CylinderMesh_yqfvy")
+
+[node name="AxisLabel_X" type="Label3D" parent="oxygen_tanks_pair" unique_id=1824216928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 0, 0, 1)
+text = "X"
+font_size = 64
+
+[node name="Axis_Y" type="MeshInstance3D" parent="oxygen_tanks_pair" unique_id=1571315299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_h2kju")
+mesh = SubResource("CylinderMesh_naaem")
+
+[node name="AxisLabel_Y" type="Label3D" parent="oxygen_tanks_pair" unique_id=1182024790]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 1, 0, 1)
+text = "Y"
+font_size = 64
+
+[node name="Axis_Z" type="MeshInstance3D" parent="oxygen_tanks_pair" unique_id=1948632166]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.5)
+material_override = SubResource("StandardMaterial3D_mmpao")
+mesh = SubResource("CylinderMesh_1bdfs")
+
+[node name="AxisLabel_Z" type="Label3D" parent="oxygen_tanks_pair" unique_id=1735634502]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 0, 1, 1)
+text = "Z"
+font_size = 64
+
+[node name="FileName" type="Label3D" parent="oxygen_tanks_pair" unique_id=65733816]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+text = "oxygen_tanks_pair.glb"
+font_size = 48
+
+[node name="power_screen" type="Node3D" parent="." unique_id=1292119362]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 1, 0)
+
+[node name="power_screen" type="Node3D" parent="power_screen" unique_id=1779922944 instance=ExtResource("8_uppeu")]
+
+[node name="Axis_X" type="MeshInstance3D" parent="power_screen" unique_id=1298445171]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_30x6v")
+mesh = SubResource("CylinderMesh_ha01v")
+
+[node name="AxisLabel_X" type="Label3D" parent="power_screen" unique_id=1975703587]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 0, 0, 1)
+text = "X"
+font_size = 64
+
+[node name="Axis_Y" type="MeshInstance3D" parent="power_screen" unique_id=1395193423]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_art02")
+mesh = SubResource("CylinderMesh_vi2lv")
+
+[node name="AxisLabel_Y" type="Label3D" parent="power_screen" unique_id=2082791058]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 1, 0, 1)
+text = "Y"
+font_size = 64
+
+[node name="Axis_Z" type="MeshInstance3D" parent="power_screen" unique_id=1489635329]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.5)
+material_override = SubResource("StandardMaterial3D_17vwh")
+mesh = SubResource("CylinderMesh_sv31c")
+
+[node name="AxisLabel_Z" type="Label3D" parent="power_screen" unique_id=1503368988]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 0, 1, 1)
+text = "Z"
+font_size = 64
+
+[node name="FileName" type="Label3D" parent="power_screen" unique_id=750268923]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+text = "power_screen.glb"
+font_size = 48
+
+[node name="power_screen_slim_tv" type="Node3D" parent="." unique_id=298585346]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 1, 0)
+
+[node name="power_screen_slim_tv" type="Node3D" parent="power_screen_slim_tv" unique_id=1377167446 instance=ExtResource("9_ngq0r")]
+
+[node name="Axis_X" type="MeshInstance3D" parent="power_screen_slim_tv" unique_id=361476792]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_k6grk")
+mesh = SubResource("CylinderMesh_tb0kd")
+
+[node name="AxisLabel_X" type="Label3D" parent="power_screen_slim_tv" unique_id=73898612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 0, 0, 1)
+text = "X"
+font_size = 64
+
+[node name="Axis_Y" type="MeshInstance3D" parent="power_screen_slim_tv" unique_id=1707292833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_yyern")
+mesh = SubResource("CylinderMesh_yj18m")
+
+[node name="AxisLabel_Y" type="Label3D" parent="power_screen_slim_tv" unique_id=527066178]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 1, 0, 1)
+text = "Y"
+font_size = 64
+
+[node name="Axis_Z" type="MeshInstance3D" parent="power_screen_slim_tv" unique_id=1430922664]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.5)
+material_override = SubResource("StandardMaterial3D_uut72")
+mesh = SubResource("CylinderMesh_8ggbr")
+
+[node name="AxisLabel_Z" type="Label3D" parent="power_screen_slim_tv" unique_id=526189151]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 0, 1, 1)
+text = "Z"
+font_size = 64
+
+[node name="FileName" type="Label3D" parent="power_screen_slim_tv" unique_id=266285803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+text = "power_screen_slim_tv.glb"
+font_size = 48
+
+[node name="small_bed" type="Node3D" parent="." unique_id=166908997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 1, 0)
+
+[node name="small_bed" type="Node3D" parent="small_bed" unique_id=697630999 instance=ExtResource("10_fkrtn")]
+
+[node name="Axis_X" type="MeshInstance3D" parent="small_bed" unique_id=554989433]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_aacwm")
+mesh = SubResource("CylinderMesh_gk3c4")
+
+[node name="AxisLabel_X" type="Label3D" parent="small_bed" unique_id=300360520]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 0, 0, 1)
+text = "X"
+font_size = 64
+
+[node name="Axis_Y" type="MeshInstance3D" parent="small_bed" unique_id=337442275]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_dk1kv")
+mesh = SubResource("CylinderMesh_xtpcy")
+
+[node name="AxisLabel_Y" type="Label3D" parent="small_bed" unique_id=2071777810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 1, 0, 1)
+text = "Y"
+font_size = 64
+
+[node name="Axis_Z" type="MeshInstance3D" parent="small_bed" unique_id=402741909]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.5)
+material_override = SubResource("StandardMaterial3D_w8ox5")
+mesh = SubResource("CylinderMesh_jmkl6")
+
+[node name="AxisLabel_Z" type="Label3D" parent="small_bed" unique_id=18571891]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 0, 1, 1)
+text = "Z"
+font_size = 64
+
+[node name="FileName" type="Label3D" parent="small_bed" unique_id=618099747]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+text = "small_bed.glb"
+font_size = 48
+
+[node name="storage_container" type="Node3D" parent="." unique_id=969948072]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 1, 0)
+
+[node name="storage_container" type="Node3D" parent="storage_container" unique_id=104102880 instance=ExtResource("11_xumun")]
+
+[node name="Axis_X" type="MeshInstance3D" parent="storage_container" unique_id=574542849]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_3o21c")
+mesh = SubResource("CylinderMesh_ksnup")
+
+[node name="AxisLabel_X" type="Label3D" parent="storage_container" unique_id=265099153]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 0, 0, 1)
+text = "X"
+font_size = 64
+
+[node name="Axis_Y" type="MeshInstance3D" parent="storage_container" unique_id=248233451]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_pb8uy")
+mesh = SubResource("CylinderMesh_0pldm")
+
+[node name="AxisLabel_Y" type="Label3D" parent="storage_container" unique_id=1341945073]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 1, 0, 1)
+text = "Y"
+font_size = 64
+
+[node name="Axis_Z" type="MeshInstance3D" parent="storage_container" unique_id=963392430]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.5)
+material_override = SubResource("StandardMaterial3D_47v8v")
+mesh = SubResource("CylinderMesh_jmeau")
+
+[node name="AxisLabel_Z" type="Label3D" parent="storage_container" unique_id=689831463]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1)
+pixel_size = 0.004
+billboard = 1
+no_depth_test = true
+modulate = Color(0, 0, 1, 1)
+text = "Z"
+font_size = 64
+
+[node name="FileName" type="Label3D" parent="storage_container" unique_id=1841792764]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+pixel_size = 0.006
+billboard = 1
+no_depth_test = true
+text = "storage_container.glb"
+font_size = 48

@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/station_builder.gd" id="1_builder"]
+
+[node name="StationAdditions" type="Node3D"]
+script = ExtResource("1_builder")
+
+[node name="TankAssemblies" type="Node3D" parent="."]
+
+[node name="PowerScreen" type="Node3D" parent="."]
+
+[node name="Bed" type="Node3D" parent="."]
+
+[node name="Cabinet" type="Node3D" parent="."]
+
+[node name="StorageContainer" type="Node3D" parent="."]
+
+[node name="LightFixtures" type="Node3D" parent="."]
+
+[node name="GreenPipes" type="Node3D" parent="."]
+
+[node name="BlueCables" type="Node3D" parent="."]
+
+[node name="Roof" type="Node3D" parent="."]

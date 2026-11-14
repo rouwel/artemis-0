@@ -1,0 +1,12 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+/build/
+/dist/
+*.log
+.godot-export-credentials
+__pycache__/
+*.pyc
+.env
+.env.*
+nasa.cfg
