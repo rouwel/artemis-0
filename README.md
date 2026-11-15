@@ -1,5 +1,7 @@
 # Artemis-0: The Last Transmission
 
+![Artemis-0: The Last Transmission — lunar outpost beneath Earth and an approaching object](docs/cover.webp)
+
 A standalone lunar-habitat survival story built for NASA Space Apps. Keep the
 outpost alive, track an approaching asteroid, and choose your final transmission.
 Optional equipment explanations and a mission debrief connect the game to real
