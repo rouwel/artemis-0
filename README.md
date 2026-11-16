@@ -10,6 +10,13 @@ engineering ideas.
 **Platform:** Linux x86_64 first. **Engine:** Godot 4.7.2 stable, standard edition.
 **Length:** approximately 10–20 minutes, depending on exploration and reading.
 
+## Play in a browser
+
+The `web/vercel` branch provides a WebGL 2 browser build for desktop browsers.
+See [WEB.md](WEB.md) for local preview, Vercel deployment, and web-specific
+limitations. The browser edition uses a bundled historical NASA catalogue
+without live refresh or credentials.
+
 ## Play the Linux build
 
 Extract `artemis-0-linux-x86_64.tar.gz`, open its folder, and run:

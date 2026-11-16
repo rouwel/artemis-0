@@ -1,0 +1,50 @@
+name: Web build and Vercel deploy
+
+on:
+  push:
+    branches: [web/vercel]
+  workflow_dispatch:
+
+jobs:
+  web:
+    if: github.ref == 'refs/heads/web/vercel'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jdx/mise-action@v2
+      - name: Cache Godot Web export template
+        id: template-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/godot/export_templates/4.7.2.stable
+          key: godot-4.7.2-web-nothreads-release
+      - name: Install official Web export template
+        if: steps.template-cache.outputs.cache-hit != 'true'
+        run: |
+          curl --fail --location --retry 3 --output "$RUNNER_TEMP/templates.tpz" \
+            https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz
+          echo "f298490b8d44d934be425a5a65a51bf15f422428b229a06a6e11d9ffea248011  $RUNNER_TEMP/templates.tpz" | sha256sum --check
+          mkdir -p "$HOME/.local/share/godot/export_templates/4.7.2.stable"
+          unzip -p "$RUNNER_TEMP/templates.tpz" templates/web_nothreads_release.zip > "$HOME/.local/share/godot/export_templates/4.7.2.stable/web_nothreads_release.zip"
+          unzip -p "$RUNNER_TEMP/templates.tpz" templates/version.txt > "$HOME/.local/share/godot/export_templates/4.7.2.stable/version.txt"
+      - name: Test and package browser edition
+        run: python3 tools/package_web.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Deploy static export
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          if [[ -z "$VERCEL_TOKEN" && -z "$VERCEL_ORG_ID" && -z "$VERCEL_PROJECT_ID" ]]; then
+            echo "Vercel secrets not configured; skipping deployment."
+            exit 0
+          fi
+          if [[ -z "$VERCEL_TOKEN" || -z "$VERCEL_ORG_ID" || -z "$VERCEL_PROJECT_ID" ]]; then
+            echo "Set VERCEL_TOKEN, VERCEL_ORG_ID and VERCEL_PROJECT_ID together."
+            exit 1
+          fi
+          npx --yes vercel@latest deploy build/web --yes --prod
