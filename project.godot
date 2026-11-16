@@ -13,7 +13,7 @@ config_version=5
 config/name="Artemis-0: The Last Transmission"
 config/description="A standalone lunar habitat survival story. Keep the outpost alive, track an approaching asteroid, and choose your final transmission."
 run/main_scene="res://scenes/main.tscn"
-config/features=PackedStringArray("4.7", "Forward Plus")
+config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
@@ -61,4 +61,5 @@ interact={
 
 [rendering]
 
+renderer/rendering_method="gl_compatibility"
 rendering_device/driver.windows="d3d12"

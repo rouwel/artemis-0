@@ -26,7 +26,7 @@ func _ready() -> void:
 	add_child(_selector)
 	_details = _label("", 17)
 	_label("READING THE DATA\n“Potentially hazardous” is a classification based on orbit and size; it is not an impact prediction. Miss distance describes an Earth close approach. Lunar distances are distance units, not a lunar collision forecast. Estimated diameters are a range.\nObject-2010-XK and its 99.8% impact probability belong only to the fictional story. Catalogue browsing costs no station energy and cannot advance or change the mission.", 15)
-	_label("Source: https://api.nasa.gov/neo/rest/v1/feed\nOnline refresh uses a locally configured NASA_API_KEY or user://nasa.cfg. No key is bundled in the game. Data load from a verified snapshot when offline.", 14)
+	_label("Source: https://api.nasa.gov/neo/rest/v1/feed\nThe browser edition uses the bundled historical snapshot; Linux players may optionally refresh with a locally configured NASA key." if OS.has_feature("web") else "Source: https://api.nasa.gov/neo/rest/v1/feed\nOnline refresh uses a locally configured NASA_API_KEY or user://nasa.cfg. No key is bundled in the game. Data loads from a verified snapshot when offline.", 14)
 
 func _label(text: String, size: int) -> Label:
 	var label := Label.new()
@@ -44,6 +44,7 @@ func bind_client(api: Node) -> void:
 func _refresh() -> void:
 	_provenance.text = "%s · Retrieved: %s · %d record(s)" % [_api.source_mode, _api.retrieved_at if not _api.retrieved_at.is_empty() else "unavailable", _api.records.size()]
 	_status.text = _api.status
+	_refresh_button.visible = not OS.has_feature("web")
 	_refresh_button.disabled = _api.busy
 	var signature := str(_api.records)
 	if signature != _records_signature:

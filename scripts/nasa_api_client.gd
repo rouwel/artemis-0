@@ -38,10 +38,10 @@ func load_offline() -> void:
 	if selected.get("ok", false):
 		records = selected.data.records
 		retrieved_at = selected.data.retrieved_at
-		status = "Historical close approaches loaded. Internet is optional."
+		status = "Historical close approaches loaded from offline data." if OS.has_feature("web") else "Historical close approaches loaded. Internet is optional."
 	else:
 		records = []
-		status = "No valid offline catalogue available. Configure a NASA key and refresh."
+		status = "No valid offline catalogue available." if OS.has_feature("web") else "No valid offline catalogue available. Configure a NASA key and refresh."
 	updated.emit()
 
 func _read_json(path: String) -> Variant:
@@ -56,6 +56,8 @@ func _read_json(path: String) -> Variant:
 	return parser.data
 
 func has_api_key() -> bool:
+	if OS.has_feature("web"):
+		return false
 	return not _api_key().is_empty()
 
 func _api_key() -> String:
@@ -67,6 +69,10 @@ func _api_key() -> String:
 	return key
 
 func refresh_catalogue() -> void:
+	if OS.has_feature("web"):
+		status = "Browser edition uses the bundled historical catalogue. Live refresh is available in the Linux build."
+		updated.emit()
+		return
 	if busy:
 		return
 	if Time.get_ticks_msec() < _next_request_msec:
