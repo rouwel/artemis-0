@@ -12,10 +12,11 @@ engineering ideas.
 
 ## Play in a browser
 
-The `web/vercel` branch provides a WebGL 2 browser build for desktop browsers.
-See [WEB.md](WEB.md) for local preview, Vercel deployment, and web-specific
-limitations. The browser edition uses a bundled historical NASA catalogue
-without live refresh or credentials.
+**[Play Artemis-0 online](https://artemis-0.vercel.app)** in a WebGL 2 desktop
+browser. The `web/vercel` branch provides the browser build. See [WEB.md](WEB.md)
+for local preview, Vercel deployment, and web-specific limitations. The browser
+edition uses a bundled historical NASA catalogue without live refresh or
+credentials.
 
 ## Play the Linux build
 

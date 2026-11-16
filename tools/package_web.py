@@ -31,6 +31,8 @@ def main():
         path = BUILD / name
         if not path.is_file() or path.stat().st_size == 0:
             raise SystemExit(f"Missing or empty web export file: {name}")
+    if (BUILD / ".env.local").exists():
+        raise SystemExit("Remove build/web/.env.local before serving or deploying the export")
     shutil.copy2(ROOT / "web" / "vercel.json", BUILD / "vercel.json")
     size = sum(p.stat().st_size for p in BUILD.iterdir() if p.is_file())
     # Hobby CLI uploads are limited to 100 MB of source files (decimal).

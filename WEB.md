@@ -3,6 +3,8 @@
 The `web/vercel` branch is a browser-specific port of Artemis-0. The tagged
 Linux release on `main` remains unchanged.
 
+**Play online:** https://artemis-0.vercel.app
+
 ## Build locally
 
 Install the Godot **4.7.2 stable standard** editor (`mise install`) and the
@@ -48,7 +50,9 @@ subsequent deploys or use `--project artemis-0`.
 For automatic production updates, add the repository's GitHub Actions secrets
 `VERCEL_TOKEN`, `VERCEL_ORG_ID`, and `VERCEL_PROJECT_ID`. The last two IDs are
 in `build/web/.vercel/project.json` after the first CLI deployment, if you
-link the folder; the token is created in your Vercel account settings.
+link the folder; the token is created in your Vercel account settings. Linking
+may also create `build/web/.env.local`; remove that local credential before
+serving or packaging the export.
 The workflow on `web/vercel` builds and checks the export on every push, and
 deploys it when all three secrets are present. It caches the official Godot
 Web template between builds; the first run downloads the full Godot template
